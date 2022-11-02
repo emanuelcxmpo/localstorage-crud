@@ -1,0 +1,107 @@
+body {
+    background: url(./imagenes/kuba-sucheta-a-pUs4cZNxM-unsplash.jpg);
+    font-family: 'Poppins', -serif;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+}
+
+body>table {
+    width: 90%;
+    border-spacing: 20px;
+}
+
+#container {
+    display: flex;
+}
+
+form {
+    margin: 0px 30px;
+}
+
+table {
+    margin: 20px 5px;
+    border-radius: 20px;
+}
+
+.mainTable {
+    border-collapse: collapse;
+}
+
+tr:nth-child(even),
+table.mainTable thead>tr {
+    background-color: #dddddd;
+    border-color: white;
+}
+
+table.mainTable tbody>tr:nth-child(odd) {
+    background-color: white;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 10px;
+}
+
+input[type=text],
+input[type=number],
+input[type=email],
+#muni {
+    width: 100%;
+    padding: 12px 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+    border: 1px solid #0084ff;
+    border-radius: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=submit] {
+    width: 50%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: white;
+    background-color: #0000ff;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button {
+    text-align: center;
+}
+
+a {
+    color: #0000ff;
+    margin-left: 15px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #0000ff;
+    margin-left: 15px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.classValidate {
+    color: #ff0000;
+    margin-left: 5px;
+}
+
+.hide {
+    display: none;
+}
+
+label {
+    color: white;
+}

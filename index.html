@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <title>Directorio telefónico</title>
+</head>
+
+<body>
+    <div>
+        <h1>DIRECTORIO TELEFÓNICO</h1>
+    </div>
+
+    <div id="container">
+        <div>
+            <form onsubmit="event.preventDefault();onSubmitForm();">
+                <div>
+                    <label>Nombre y apellido</label><br><label class="classValidate hide" id="labelId">Falta el nombre y
+                        el
+                        apellido</label>
+                    <input type="text" name="name" id="name">
+                </div>
+                <div>
+                    <label>Teléfono</label><br><label class="classValidate hide" id="labelIdTwo">Falta el
+                        teléfono</label>
+                    <input type="number" name="phone" id="phone">
+                </div>
+                <div>
+                    <label>Correo electronico</label><br><label class="classValidate hide" id="labelIdTre">Falta el
+                        correo
+                        electronico</label>
+                    <input type="email" name="email" id="email">
+                </div>
+                <div>
+                    <label for="muni">Municipio</label>
+                    <select id="muni" name="muni" required>
+                        <option disabled="disabled" selected="selected">- Selecciona un municipio -</option>
+                        <option value="Valledupar">Valledupar</option>
+                        <option value="Aguachica">Aguachica</option>
+                        <option value="Codazzi">Codazzi</option>
+                        <option value="Bosconia">Bosconia</option>
+                        <option value="Chimichagua">Chimichagua</option>
+                        <option value="El Copey">El Copey</option>
+                        <option value="Curumaní">Curumaní</option>
+                        <option value="La Paz">La Paz</option>
+                        <option value="Pueblo Bello">Pueblo Bello</option>
+                    </select>
+                </div>
+                <div>
+                    <label>Barrio</label><br><label class="classValidate hide" id="labelIdFor">Falta el barrio</label>
+                    <input type="text" name="hood" id="hood">
+                </div>
+                <div>
+                    <label>Dirección</label><br><label class="classValidate hide" id="labelIdFive">Falta la
+                        dirección</label>
+                    <input type="text" name="adr" id="adr">
+                </div>
+                <div class="button">
+                    <input type="submit" value="Registrar">
+                </div>
+            </form>
+        </div>
+
+
+        <div>
+
+            <td>
+                <table class="mainTable" id="phoneDirectory">
+                    <thead>
+                        <th>Nombre y apellido</th>
+                        <th>Teléfono </th>
+                        <th>Correo electronico</th>
+                        <th>Municipio</th>
+                        <th>Barrio</th>
+                        <th>Dirección</th>
+                        <th>Acciones</th>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </td>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
