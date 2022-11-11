@@ -7,7 +7,7 @@ function onSubmitForm() {
     if (validate()) {
         var formData = readForm();
         if (selectRow == null) {
-            insertNewRecord(formData);
+            insertNew(formData);
         }
         else {
             updateRecord(formData);
@@ -27,7 +27,7 @@ function readForm() {
     return formData
 }
 
-function insertNewRecord(formData) {
+function insertNew(formData) {
     var table = document.getElementById("phoneDirectory").getElementsByTagName('tbody')[0];
     var newRow = table.insertRow();
     cell1 = newRow.insertCell(0);
@@ -60,7 +60,7 @@ function resetForm() {
 
 function deleteRecord(a) {
     var row = a.parentElement.parentElement
-    if (confirm("Estas seguro de eliminar esta fila")) {
+    if (confirm("¿Estas seguro de eliminar este registro?")) {
         document.getElementById("phoneDirectory").deleteRow(row.rowIndex);
         directory.splice(row.rowIndex - 1, 1);
         localStorage.setItem("directory", JSON.stringify(directory));
